@@ -167,8 +167,13 @@
                         v-for="item in data.slice(0, 10)"
                         @click="handleAddCart(item)"
                       >
-                        <div class="other__card_header bg-red-500 w-[200px] h-full">
-                          <img :src="`${item.img}`" class="w-full h-full object-cover" />
+                        <div
+                          class="other__card_header bg-red-500 w-[200px] h-full"
+                        >
+                          <img
+                            :src="`${item.img}`"
+                            class="w-full h-full object-cover"
+                          />
                         </div>
                         <div class="other__card_body w-[100%]">
                           <p class="text-[13px] w-full">{{ item.title }}...</p>
@@ -180,7 +185,7 @@
                 </div>
                 <div
                   v-else
-                  class="cart__content w-[300px] h-[100px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-md flex items-center justify-center"
+                  class="cart__content w-[300px] h-[100px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-md items-center justify-center"
                   ref="content"
                 >
                   <h1 class="text-[32px]">Not Date</h1>
@@ -243,8 +248,8 @@ export default {
       this.$emit("delete", id);
     },
     handleAddCart(item) {
-      this.$emit('addCart', item)
-    }
+      this.$emit("addCart", item);
+    },
   },
 };
 </script>

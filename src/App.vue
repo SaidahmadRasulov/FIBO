@@ -1,10 +1,10 @@
 <script setup>
 import { RouterView } from "vue-router";
-import Header from "./components/header.vue";
+
 </script>
 
 <template>
-  <Header
+  <header
     :cartArray="cartArray"
     @addCart="handleAddOtherCart"
     :data="data"
@@ -16,6 +16,7 @@ import Header from "./components/header.vue";
 
 <script>
 import products from "./data/data";
+import header from "./components/Header.vue";
 
 export default {
   data() {
