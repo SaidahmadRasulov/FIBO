@@ -4,7 +4,7 @@ import { RouterView } from "vue-router";
 </script>
 
 <template>
-  <header
+  <Header
     :cartArray="cartArray"
     @addCart="handleAddOtherCart"
     :data="data"
@@ -16,7 +16,7 @@ import { RouterView } from "vue-router";
 
 <script>
 import products from "./data/data";
-import header from "./components/Header.vue";
+import Header from "./components/Header.vue";
 
 export default {
   data() {
