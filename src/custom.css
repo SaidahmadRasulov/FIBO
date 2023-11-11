@@ -1,0 +1,109 @@
+.swiper__content {
+  height: 60vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center !important;
+  width: 70% !important;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  object-fit: cover !important;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+}
+
+.swiper-slide-prev {
+  width: 40% !important;
+  height: 100%;
+}
+
+.swiper-slide-prev img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.swiper-slide-active {
+  width: 40% !important;
+  height: 100%;
+}
+
+.swiper-slide-active:nth-child(2) {
+  width: 40% !important;
+  height: 100%;
+}
+
+.swiper-slide-active img {
+  width: 100%;
+  height: 100%;
+  filter: none;
+  object-fit: contain;
+}
+
+.swiper-slide-next {
+  width: 40% !important;
+}
+
+.swiper-slide-next img {
+  width: 100%;
+  object-fit: contain;
+  filter: none;
+}
+
+.swiper-button-next {
+  top: 50% !important;
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  right: 5% !important;
+}
+
+.swiper-button-next::after {
+  content: ''; 
+  background: url(./assets/r-l.png);
+  width: 100%;
+  height: 100%;
+  font-size: 16px; 
+  line-height: 20px; 
+  display: inline-block;
+  margin-top: -10px; 
+  background-size: cover;
+  left: 40% !important;
+}
+
+.swiper-button-prev {
+  top: 50% !important;
+  width: 30px;
+  height: 30px;
+  left: 15%;
+}
+
+.swiper-button-prev::after {
+  content: ''; 
+  width: 100%;
+  height: 100%;
+  background: url(./assets/r-lc.png);
+  background-size: cover;
+  display: inline-block;
+  margin-top: -10px;
+}

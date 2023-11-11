@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  width: 100%;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+}
+
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  top: 0 !important;
+  padding: 2rem;
+  z-index: 999;
+  background-color: #f7d22dc6;
+  margin: 0;
+  right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: #0e0c0d;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f7d22d;
+  border-radius: 20px;
+}
