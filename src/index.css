@@ -8,7 +8,6 @@
   margin: 0 auto !important;
 }
 
-
 .fixed {
   width: 100%;
   position: fixed;
@@ -18,6 +17,35 @@
   background-color: #f7d22dc6;
   margin: 0;
   right: 0;
+}
+
+.custom_fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 48;
+  background-color: #f7d22d;
+  right: 0;
+  padding: 2rem;
+  height: auto;
+  top: 0;
+}
+
+.custom_fixed .btn_cart{
+  background-color: white;
+}
+
+.custom_fixed .fixed__image {
+  display: block;
+  position: relative;
+  top: 10px;
+  z-index: 50;
+  left: 0;
+}
+
+.custom_fixed .navbar__media img {
+  right: 20px !important;
+  position: absolute;
+  top: 30%;
 }
 
 ::-webkit-scrollbar {

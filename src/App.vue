@@ -1,5 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router";
+import Header from "./components/Header.vue";
 
 </script>
 
@@ -16,7 +17,6 @@ import { RouterView } from "vue-router";
 
 <script>
 import products from "./data/data";
-import Header from "./components/Header.vue";
 
 export default {
   data() {
