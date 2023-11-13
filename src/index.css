@@ -30,7 +30,7 @@
   top: 0;
 }
 
-.custom_fixed .btn_cart{
+.custom_fixed .btn_cart {
   background-color: white;
 }
 
@@ -57,4 +57,12 @@
 ::-webkit-scrollbar-thumb {
   background-color: #f7d22d;
   border-radius: 20px;
+}
+
+.product__scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.new__card {
+  box-shadow: 0 10px 5px 0px rgb(232, 230, 230);
 }
