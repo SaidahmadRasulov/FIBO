@@ -1,5 +1,5 @@
 <template>
-    <section class="discount__section sm:h-[55vh] h-[100vh] overflow-y-hidden relative">
+    <section class="discount__section sm:h-[55vh] md:h-[100vh] overflow-y-hidden relative">
         <div class="container">
           <div class="discount__title text-center mb-10">
             <h1 class="text-[32px] font-bold">
@@ -39,7 +39,7 @@
             </RouterLink>
           </div>
         </div>
-        <div class="discount__image sm:h-[200px] md:h-[250px] h-[500px] w-100% absolute bottom-[-20%] right-0">
+        <div class="discount__image sm:h-[200px] md:h-[250px] xl:h-[500px] w-100% absolute bottom-[-20%] right-0">
           <img src="../assets/woman.png" alt="" class="h-full w-full object-cover" />
         </div>
       </section>

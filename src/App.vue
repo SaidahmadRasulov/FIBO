@@ -1,6 +1,4 @@
-<script setup>
-import { RouterView } from "vue-router";
-import Header from "./components/Header.vue";
+<script>
 
 </script>
 
@@ -12,18 +10,27 @@ import Header from "./components/Header.vue";
     @delete="handleDelete"
     @cartSum="cartSum"
   />
-  <RouterView :data="data" @add="handleAddCart"></RouterView>
+  <RouterView
+    :data="data"
+    :discountData="discountData"
+    @add="handleAddCart"
+  ></RouterView>
+  <Footer />
 </template>
 
 <script>
 import products from "./data/data";
-
+import discount from "./data/discountData";
+import { RouterView } from "vue-router";
+import Header from "./components/Header.vue";
+import Footer from "./components/Footer.vue";
 export default {
   data() {
     return {
       cartArray: [],
       data: products,
       cartSum: 4000,
+      discountData: discount,
     };
   },
   methods: {
@@ -36,6 +43,11 @@ export default {
     handleAddOtherCart(item) {
       this.cartArray.push(item);
     },
+  },
+  components: {
+    Header,
+    RouterView,
+    Footer,
   },
 };
 </script>
