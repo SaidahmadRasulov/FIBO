@@ -2,7 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue';
 import Categories from '../components/Categories.vue';
 import Discount from '../views/Discount.vue';
-import discountSingle from '../views/discountSingle.vue'
+import discountSingle from '../views/discountSingle.vue';
+import Cart from '../views/Cart.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/discount/:id',
       name: 'singlePageDiscount',
       component: discountSingle
+    },
+    {
+      path: '/cart',
+      name: 'cart',
+      component: Cart
     }
   ]
 })

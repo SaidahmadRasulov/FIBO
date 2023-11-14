@@ -1,19 +1,18 @@
-<script>
-
-</script>
-
 <template>
   <Header
     :cartArray="cartArray"
     @addCart="handleAddOtherCart"
     :data="data"
     @delete="handleDelete"
-    @cartSum="cartSum"
+    :cartSum="cartSum"
+    @summary="handleSummary"
   />
   <RouterView
     :data="data"
     :discountData="discountData"
     @add="handleAddCart"
+    :cartArray="cartArray"
+    @delete="handleDelete"
   ></RouterView>
   <Footer />
 </template>
@@ -29,7 +28,7 @@ export default {
     return {
       cartArray: [],
       data: products,
-      cartSum: 4000,
+      cartSum: 0,
       discountData: discount,
     };
   },
@@ -38,10 +37,16 @@ export default {
       this.cartArray.push(item);
     },
     handleDelete(id) {
-      this.cartArray = this.cartArray.filter((item) => item.id !== id);
+      const indexToRemove = this.cartArray.findIndex((item) => item.id === id);
+      if (indexToRemove !== -1) {
+        this.cartArray.splice(indexToRemove, 1);
+      }
     },
     handleAddOtherCart(item) {
       this.cartArray.push(item);
+    },
+    handleSummary(item, count) {
+      this.cartSum = count * item.price;
     },
   },
   components: {

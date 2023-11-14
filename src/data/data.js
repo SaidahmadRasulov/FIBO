@@ -4,7 +4,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "pizza",
@@ -14,7 +15,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "pasta",
@@ -24,7 +26,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "soup",
@@ -34,7 +37,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/middlePizza.png",
     category: "salat",
@@ -44,7 +48,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "drink",
@@ -54,7 +59,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "desert",
@@ -64,7 +70,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "bakalea",
@@ -74,7 +81,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "antipasta",
@@ -84,7 +92,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "combo",
@@ -94,7 +103,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "combo",
@@ -104,7 +114,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "combo",
@@ -114,7 +125,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "combo",
@@ -124,7 +136,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "combo",
@@ -134,7 +147,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "combo",
@@ -144,7 +158,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "combo",
@@ -154,7 +169,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "combo",
@@ -164,7 +180,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "pizza",
@@ -174,7 +191,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "new",
     img: "/newPizza.png",
     category: "pizza",
@@ -184,7 +202,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "pizza",
@@ -194,7 +213,8 @@ const products = [
     title: "С креветками и трюфелями",
     description:
       "Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г",
-    price: "600p",
+    price: 600,
+    count: 0,
     status: "old",
     img: "/oldPizza.png",
     category: "pizza",

@@ -35,7 +35,8 @@
               </ul>
             </div>
           </div>
-          <div class="navbar__contact sm:hidden lg:hidden xl:flex items-center gap-4"
+          <div
+            class="navbar__contact sm:hidden lg:hidden xl:flex items-center gap-4"
           >
             <a href="tel:+998908131720">
               <button
@@ -48,27 +49,32 @@
               +998 90 813-17-20
             </h2>
           </div>
-          <div class="navbar__media_content sm:block md:block lg:flex xl:hidden lg:items-center lg:gap-5" ref="navbar__media_ref">
-            
+          <div
+            class="navbar__media_content sm:block md:block lg:flex xl:hidden lg:items-center lg:gap-5"
+            ref="navbar__media_ref"
+          >
             <div class="fixed__image hidden">
               <RouterLink to="/">
-                <img src="../assets/Logo.png" :class="toggleBlock" alt="">
+                <img src="../assets/Logo.png" :class="toggleBlock" alt="" />
               </RouterLink>
             </div>
             <h2 class="sm:hidden lg:block text-[20px] font-bold">
               8 499 391-84-49
             </h2>
-            <div class="sm:hidden lg:block"
+            <div
+              class="sm:hidden lg:block"
               @mouseenter="handleShow"
               @mouseleave="handleShow"
             >
               <RouterLink to="/cart">
-                <button class="font-bold btn_cart py-2 px-3 bg-[#F7D22D] rounded-md">
+                <button
+                  class="font-bold btn_cart py-2 px-3 bg-[#F7D22D] rounded-md"
+                >
                   Корзина | {{ this.cartArray.length }}
                 </button>
               </RouterLink>
               <div
-                class="cart__content w-[300px] h-[390px] bg-[#F7D22D] absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
+                class="cart__content w-[300px] h-[590px] bg-[#F7D22D] absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
                 ref="content"
                 v-if="this.cartArray.length > 0"
               >
@@ -127,7 +133,7 @@
                 </div>
                 <div class="cart__other px-3 mt-1 overflow-x-scroll">
                   <div
-                    class="cart__other_cards w-full gap-5 flex justify-between mt-7 mb-0"
+                    class="cart__other_cards w-full gap-5 flex justify-between mt-0 mb-0"
                   >
                     <div
                       class="other__card h-full w-[100%] flex gap-5 px-5 py-2 border-[#F7D22D] border-4 my-2 rounded-lg cursor-pointer"
@@ -152,7 +158,7 @@
               </div>
               <div
                 v-else
-                class="cart__content w-[300px] h-[100px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-md items-center justify-center"
+                class="cart__content w-[300px] h-[50px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-md text-center"
                 ref="content"
               >
                 <h1 class="text-[32px]">Not Date</h1>
@@ -165,7 +171,9 @@
                 src="../assets/menu_x.png"
                 alt=""
               />
-              <nav @click="toggleBlock" class="media_nav sm:block lg:hidden absolute z-[49] top-0 right-0 w-[100%] h-[520px] bg-[#F7D22D]"
+              <nav
+                @click="toggleBlock"
+                class="media_nav sm:block lg:hidden absolute z-[49] top-0 right-0 w-[100%] h-[520px] bg-[#F7D22D]"
                 ref="media_nav"
               >
                 <ul
@@ -323,12 +331,12 @@
                   </li>
                 </ul>
               </nav>
-              <nav @click="toggleBlock" class="media_nav sm:hidden lg:block absolute z-[49] top-[5rem] right-[2%] w-[20%] h-[450px] p-5 bg-[white] rounded-xl shadow-2xl"
+              <nav
+                @click="toggleBlock"
+                class="media_nav sm:hidden lg:block absolute z-[49] top-[5rem] right-[2%] w-[20%] h-[450px] p-5 bg-[white] rounded-xl shadow-2xl"
                 ref="media_nav"
               >
-                <ul
-                  class="media_nav_group text-[15px] font-bold leading-[2]"
-                >
+                <ul class="media_nav_group text-[15px] font-bold leading-[2]">
                   <li class="nav__item">
                     <RouterLink to="/categories/pizza">Пицца</RouterLink>
                   </li>
@@ -492,7 +500,10 @@
             </div>
           </div>
         </div>
-        <div class="navbar__bottom sm:hidden lg:hidden xl:block mt-4" ref="navbarFix">
+        <div
+          class="navbar__bottom sm:hidden lg:hidden xl:block mt-4"
+          ref="navbarFix"
+        >
           <nav class="navbar__nav">
             <ul
               class="nav__group flex items-center justify-between text-[1rem] font-[600]"
@@ -544,7 +555,7 @@
                   </button>
                 </RouterLink>
                 <div
-                  class="cart__content w-[300px] h-[390px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
+                  class="cart__content w-[300px] h-[425px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
                   ref="content"
                   v-if="this.cartArray.length > 0"
                 >
@@ -568,7 +579,7 @@
                           class="h-[30px] count__form flex items-center justify-between bg-[#F3F3F7]"
                         >
                           <button
-                            @click="count++"
+                            @click="handleIncrSum(item)"
                             class="w-full text-[20px] text-center"
                           >
                             +
@@ -597,9 +608,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="cart__sum px-3 flex items-center mt-1">
+                  <div class="cart__sum px-3 flex items-center mt-1 gap-4">
                     <h2>Сумма заказа</h2>
-                    <span class="text-black text-[40px]">{{ cartSum }}</span>
+                    <span class="text-black text-[1.2rem]">{{ cartSum }}</span>
                   </div>
                   <div class="cart__other_title px-3">
                     <h2 class="text-[#FF2E65]">Добавить к заказу?</h2>
@@ -686,11 +697,9 @@ export default {
       if (e.type == "mouseenter") {
         this.$refs.content.classList.remove("hidden");
         this.$refs.content.classList.add("block");
-        console.log(this.$refs.content.classList);
       } else {
         this.$refs.content.classList.remove("block");
         this.$refs.content.classList.add("hidden");
-        console.log(this.$refs.content.classList);
       }
     },
     handleDelete(id) {
@@ -703,6 +712,10 @@ export default {
       this.defaultBoolean = !this.defaultBoolean;
       this.$refs.media_nav.classList.toggle("sm:hidden");
     },
+    handleIncrSum(item) {
+      this.count = this.count + 1
+      this.$emit('summary', [item, this.count])
+    }
   },
 };
 </script>
