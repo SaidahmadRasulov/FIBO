@@ -3,13 +3,13 @@
     <div class="container mx-auto py-3 sm:px-3 md:px-0">
       <div class="first__products_section">
         <h1
-          class="first__product__title text-[#F7D22D] text-[32px] font-bold mb-16"
+          class="first__product__title text-[#F7D22D] text-[32px] font-bold mb-16 md:px-[2rem] xl:px-0"
         >
           Паста
         </h1>
         <div
           class="products__content lg:flex xl:flex justify-between 
-           flex-wrap xl:gap-y-14 xl:gap-x-7"
+           flex-wrap md:gap-y-14 xl:gap-y-14 xl:gap-x-7"
         >
           <div class="product__card lg:w-[40%] sm:grid sm:mb-[5rem] md:mb-0 xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 8)">
             <div class="product__card_header w-full sm:grid-rows-2">
@@ -42,7 +42,7 @@
       </div>
       <div class="second__products_section sm:my-[6rem] xl:my-[6rem]">
         <h1
-          class="second__product__title text-[#F7D22D] text-[32px] font-bold mb-16"
+          class="second__product__title text-[#F7D22D] text-[32px] font-bold mb-16 md:px-[2rem]"
         >
           Паста
         </h1>
@@ -80,7 +80,7 @@
       </div>
       <div class="third__products_section sm:mb-[6rem] xl:mb-[6rem]">
         <h1
-          class="third__product__title text-[#F7D22D] text-[32px] font-bold mb-16"
+          class="third__product__title text-[#F7D22D] text-[32px] font-bold mb-16 md:px-[2rem] xl:px-0"
         >
           Паста
         </h1>

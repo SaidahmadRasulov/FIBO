@@ -1,23 +1,22 @@
 <template>
   <section class="cart__section">
     <div class="container">
-      <div class="cart__title md:px-3 xl:px-0">
+      <div class="cart__title sm:px-[1rem] md:px-3 xl:px-0">
         <h1 class="text-[#F7D22D] text-[36px] font-bold">Корзина</h1>
       </div>
-      <div class="cart__content my-[4rem] md:px-[3rem] xl:px-0">
-        <div
-          class="cart__card flex items-center gap-[4rem] mb-[2rem] border border-l-0 border-r-0 py-5"
+      <div class="cart__content my-[4rem] sm:px-[1rem] md:px-[3rem] xl:px-0">
+        <div class="cart__card md:flex sm:grid-cols-2 sm:grid items-center gap-[4rem] mb-[2rem] border border-l-0 border-r-0 py-5"
           v-if="cartArray.length > 0"
           v-for="item in cartArray"
         >
-          <div class="cart__card_header w-[10%]">
+          <div class="cart__card_header sm:w-[100%] xl:w-[10%] sm:col-span-2">
             <img :src="`${item.img}`" alt="" class="w-full" />
           </div>
-          <div class="cart__card_body w-[50%]">
+          <div class="cart__card_body w-[90%] sm:col-span-3">
             <h2 class="font-bold text-[20px]">{{ item.title }}</h2>
             <p>{{ item.description }}</p>
           </div>
-          <div class="cart__card_footer flex items-center text-end gap-7">
+          <div class="cart__card_footer flex items-center text-end gap-7 sm:col-span-3">
             <span class="text-[#F7D22D] text-[2rem] font-bold">
                 {{ item.price }}
             </span>
