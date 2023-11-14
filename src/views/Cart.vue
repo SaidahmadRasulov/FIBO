@@ -1,10 +1,10 @@
 <template>
   <section class="cart__section">
     <div class="container">
-      <div class="cart__title">
+      <div class="cart__title md:px-3 xl:px-0">
         <h1 class="text-[#F7D22D] text-[36px] font-bold">Корзина</h1>
       </div>
-      <div class="cart__content my-[4rem]">
+      <div class="cart__content my-[4rem] md:px-[3rem] xl:px-0">
         <div
           class="cart__card flex items-center gap-[4rem] mb-[2rem] border border-l-0 border-r-0 py-5"
           v-if="cartArray.length > 0"

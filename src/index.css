@@ -22,7 +22,7 @@
 .custom_fixed {
   width: 100%;
   position: fixed;
-  z-index: 48;
+  z-index: 59;
   background-color: #f7d22d;
   right: 0;
   padding: 2rem;

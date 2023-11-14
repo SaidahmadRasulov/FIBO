@@ -6,10 +6,10 @@
       </div>
       <div class="top_section_content">
         <ul
-          class="top_section_cards flex sm:justify-center sm:gap-4 sm:gap-y-[56px] md:gap-[5rem] md:gap-y-0 justify-between sm:flex-wrap"
+          class="top_section_cards flex sm:justify-center sm:gap-4 sm:gap-y-[56px] md:gap-[5rem] md:gap-y-[4rem] xl:gap-y-0 xl:justify-between sm:flex-wrap md:justify-center"
         >
           <ul
-            class="top_section_card sm:w-[45%] md:w-[20%] bg-white p-3 rounded-lg shadow-xl"
+            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
           >
             <li class="top_card_item relative mb-8">
               <div
@@ -27,7 +27,7 @@
             </li>
           </ul>
           <ul
-            class="top_section_card sm:w-[45%] md:w-[20%] bg-white p-3 rounded-lg shadow-xl"
+            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
           >
             <li class="top_card_item relative mb-8">
               <div
@@ -45,7 +45,7 @@
             </li>
           </ul>
           <ul
-            class="top_section_card sm:w-[45%] md:w-[20%] bg-white p-3 rounded-lg shadow-xl"
+            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
           >
             <li class="top_card_item relative mb-8">
               <div
@@ -63,7 +63,7 @@
             </li>
           </ul>
           <ul
-            class="top_section_card sm:w-[45%] md:w-[20%] bg-white p-3 rounded-lg shadow-xl"
+            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
           >
             <li class="top_card_item relative mb-8">
               <div
@@ -93,9 +93,9 @@
       </div>
     </div>
   </section>
-  <section class="footer__bottom_section py-[4rem]">
-    <div class="container flex justify-between">
-      <div class="bottom_section_title w-[40%]">
+  <section class="footer__bottom_section py-[4rem] sm:px-[1rem] xl:px-0">
+    <div class="container flex justify-between sm:flex-col xl:flex-row">
+      <div class="bottom_section_title xl:w-[40%] sm:w-[100%]">
         <div class="bottom__logo">
           <img src="../assets/Logo.png" alt="">
         </div>
@@ -147,7 +147,7 @@
           </ul>
         </div>
       </div>
-      <div class="bottom_section_content w-[40%]">
+      <div class="bottom_section_content xl:w-[40%] sm:w-[100%]">
         <h2 class="uppercase font-bold ">Остались вопросы? А мы всегда на связи:
         </h2>
         <ul class="bottom_content_socials grid grid-cols-4 mt-[3rem] gap-3 text-center">

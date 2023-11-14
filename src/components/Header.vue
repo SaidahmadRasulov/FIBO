@@ -186,7 +186,7 @@
                     <RouterLink to="/categories/pasta">Паста</RouterLink>
                   </li>
                   <li class="nav__item">
-                    <RouterLink to="/categories/soup">Пицца</RouterLink>
+                    <RouterLink to="/categories/soup">Суп</RouterLink>
                   </li>
                   <li class="nav__item">
                     <RouterLink to="/categories/salat">Салаты</RouterLink>
@@ -344,7 +344,7 @@
                     <RouterLink to="/categories/pasta">Паста</RouterLink>
                   </li>
                   <li class="nav__item">
-                    <RouterLink to="/categories/soup">Пицца</RouterLink>
+                    <RouterLink to="/categories/soup">Суп</RouterLink>
                   </li>
                   <li class="nav__item">
                     <RouterLink to="/categories/salat">Салаты</RouterLink>

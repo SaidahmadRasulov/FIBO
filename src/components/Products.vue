@@ -8,9 +8,10 @@
           Паста
         </h1>
         <div
-          class="products__content lg:flex xl:flex justify-between flex-wrap gap-y-14 gap-x-7"
+          class="products__content lg:flex xl:flex justify-between 
+           flex-wrap xl:gap-y-14 xl:gap-x-7"
         >
-          <div class="product__card lg:w-[40%] sm:grid xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 8)">
+          <div class="product__card lg:w-[40%] sm:grid sm:mb-[5rem] md:mb-0 xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 8)">
             <div class="product__card_header w-full sm:grid-rows-2">
               <img class="w-full" :src="`${item.img}`" alt="" />
             </div>
@@ -48,7 +49,7 @@
         <div
           class="products__content lg:flex xl:flex justify-between flex-wrap gap-y-14 gap-x-7"
         >
-          <div class="product__card lg:w-[40%] sm:grid xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 8)">
+          <div class="product__card lg:w-[40%] sm:mb-[4rem] md:mb-0 sm:grid xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 8)">
             <div class="product__card_header w-full sm:grid-rows-2">
               <img class="w-full" :src="`${item.img}`" alt="" />
             </div>
@@ -86,7 +87,7 @@
         <div
           class="products__content lg:flex xl:flex justify-between flex-wrap gap-y-14 gap-x-7"
         >
-          <div class="product__card lg:w-[40%] sm:grid xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 4)">
+          <div class="product__card lg:w-[40%] sm:mb-[4rem] md:mb-0 sm:grid xl:block sm:grid-cols-2 sm:grid-rows-1 xl:w-[20%] xl:flex-col sm:w-[100%] sm:mx-auto lg:gap-5" v-for="item in data.slice(0, 4)">
             <div class="product__card_header w-full sm:grid-rows-2">
               <img class="w-full" :src="`${item.img}`" alt="" />
             </div>
