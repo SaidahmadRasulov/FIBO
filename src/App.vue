@@ -13,6 +13,7 @@
     @add="handleAddCart"
     :cartArray="cartArray"
     @delete="handleDelete"
+    :otherData="otherData"
   ></RouterView>
   <Footer />
 </template>
@@ -20,6 +21,7 @@
 <script>
 import products from "./data/data";
 import discount from "./data/discountData";
+import otherData from "./data/otherData";
 import { RouterView } from "vue-router";
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
@@ -30,6 +32,7 @@ export default {
       data: products,
       cartSum: 0,
       discountData: discount,
+      otherData: otherData
     };
   },
   methods: {

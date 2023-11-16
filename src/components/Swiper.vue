@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="swiper__content">
+    <div class="swiper__content sm:h-[40vh] md:h-auto xl:h-[60vh]">
       <swiper
         :slidesPerView="4"
         :navigation="true"

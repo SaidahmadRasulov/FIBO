@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  transition: all .2s linear;
+}
+
+.nav__item:hover {
+  color: #f7d22d;
+}
+
+.nav__item button {
+  color: #0e0c0d;
+}
+
+.cart__content {
+  color: #0e0c0d;
+}
+
+
 .container {
   width: 100%;
   max-width: 1200px !important;
@@ -14,9 +31,17 @@
   top: 0 !important;
   padding: 2rem;
   z-index: 999;
-  background-color: #f7d22dc6;
+  background-color: white;
   margin: 0;
   right: 0;
+}
+
+.fixed .fixed__logo {
+  display: block;
+}
+
+.block.not_data {
+  display: flex;
 }
 
 .custom_fixed {
@@ -25,8 +50,8 @@
   z-index: 59;
   background-color: #f7d22d;
   right: 0;
-  padding: 2rem;
   height: auto;
+  padding: 0 1rem;
   top: 0;
 }
 
@@ -37,7 +62,6 @@
 .custom_fixed .fixed__image {
   display: block;
   position: relative;
-  top: 10px;
   z-index: 50;
   left: 0;
 }

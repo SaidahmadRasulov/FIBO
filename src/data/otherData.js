@@ -1,7 +1,9 @@
 const otherData = [
     {
         id: 1,
-        title: 'New product'
+        title: 'New product',
+        price: 120,
+        img: ''
     }
 ];
 

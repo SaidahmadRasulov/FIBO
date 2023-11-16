@@ -1,9 +1,9 @@
 <template>
   <section class="single_discount_section py-[5rem] sm:mb-[0rem] xl:mb-[5rem]">
     <div class="container">
-        <div class="single_discount_content sm:flex-col md:flex-initial sm:gap-[4rem] xl:gap-0 flex justify-between" v-for="item in filteredData">
-            <div class="single_image sm:w-[90%] sm:mx-auto md:mx-0 xl:w-[40%]">
-                <img :src="`${item.image}`" alt="Image Alternative">
+        <div class="single_discount_content sm:flex-col md:flex-initial sm:gap-[4rem] xl:gap-0 xl:h-full xl:flex-row flex justify-between" v-for="item in filteredData">
+            <div class="single_image sm:w-[90%] sm:mx-auto md:mx-0 xl:w-[45%]">
+                <img :src="`${item.image}`" class="w-full" alt="Image Alternative">
             </div>
             <div class="single_info sm:w-[90%] sm:mx-auto md:mx-0 xl:w-[45%]">
                 <h2 class="text-[2rem] mb-[1rem]">{{ item.title }}</h2>

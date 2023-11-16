@@ -7,7 +7,7 @@
         </h1>
       </div>
       <div class="category__content flex items-center gap-7 flex-wrap">
-        <div class="category__card rounded-lg shadow-xl sm:w-[90%] sm:mx-auto md:w-[45%] xl:w-[30%]"
+        <div class="category__card rounded-lg shadow-xl sm:w-[90%] sm:mx-auto md:w-[45%] xl:w-[30%] xl:mx-0"
           v-for="item in filteredData"
           :key="item.id"
         >

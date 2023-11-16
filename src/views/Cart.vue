@@ -46,6 +46,11 @@
           </h1>
         </div>
       </div>
+      <div class="cart__add_section">
+        <div class="cart__add_title">
+          <h2></h2>
+        </div>
+      </div>            
     </div>
   </section>
 </template>

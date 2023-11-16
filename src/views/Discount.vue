@@ -1,5 +1,5 @@
 <template>
-  <section class="discount__section py-7 mb-[5rem] sm:px-[1rem] md:px-[1rem]">
+  <section id="discount" class="discount__section py-7 mb-[5rem] sm:px-[1rem] md:px-[1rem]">
     <div class="container">
       <div class="discount__title mb-[4rem]">
         <h1 class="text-[#F7D22D] text-[32px] font-bold">Акции</h1>

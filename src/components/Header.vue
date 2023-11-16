@@ -50,7 +50,7 @@
             </h2>
           </div>
           <div
-            class="navbar__media_content sm:block md:block lg:flex xl:hidden lg:items-center lg:gap-5"
+            class="navbar__media_content sm:block md:block lg:flex xl:hidden lg:items-center lg:gap-5 md:py-3 xl:py-0"
             ref="navbar__media_ref"
           >
             <div class="fixed__image hidden">
@@ -504,152 +504,167 @@
           class="navbar__bottom sm:hidden lg:hidden xl:block mt-4"
           ref="navbarFix"
         >
-          <nav class="navbar__nav">
-            <ul
-              class="nav__group flex items-center justify-between text-[1rem] font-[600]"
-            >
-              <li class="nav__item">
-                <RouterLink to="/categories/pizza">Пицца</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/pasta">Паста</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/soup">Пицца</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/salat">Салаты</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/drink">Напитки</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/desert">Десерты</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/bakalea">Бакалея</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/antipasta">Антипасти</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/categories/combo">Комбо</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/discount">Акции</RouterLink>
-              </li>
-              <li class="nav__item">
-                <RouterLink to="/contact">Контакты</RouterLink>
-              </li>
-              <li class="nav__item text-[#696F7A]">
-                <RouterLink to="/sign">Войти</RouterLink>
-              </li>
-              <li
-                class="nav__item relative"
-                @mouseenter="handleShow"
-                @mouseleave="handleShow"
+          <div class="container">
+            <nav class="navbar__nav">
+              <ul
+                class="nav__group flex items-center justify-between text-[1rem] font-[600]"
               >
-                <RouterLink to="/cart">
-                  <button class="py-2 px-3 bg-[#F7D22D] rounded-md">
-                    Корзина | {{ this.cartArray.length }}
-                  </button>
+              <li class="nav__item">
+                <RouterLink to="/" class="fixed__logo hidden">
+                  <img src="../assets/Logo.png" alt="">
                 </RouterLink>
-                <div
-                  class="cart__content w-[300px] h-[425px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
-                  ref="content"
-                  v-if="this.cartArray.length > 0"
+              </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/pizza">Пицца</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/pasta">Паста</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/soup">Пицца</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/salat">Салаты</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/drink">Напитки</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/desert">Десерты</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/bakalea">Бакалея</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/antipasta">Антипасти</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/categories/combo">Комбо</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/discount">Акции</RouterLink>
+                </li>
+                <li class="nav__item">
+                  <RouterLink to="/contact">Контакты</RouterLink>
+                </li>
+                <li class="nav__item text-[#696F7A]">
+                  <RouterLink to="/sign">Войти</RouterLink>
+                </li>
+                <li
+                  class="nav__item relative"
+                  @mouseenter="handleShow"
+                  @mouseleave="handleShow"
                 >
+                  <RouterLink to="/cart">
+                    <button class="py-2 px-3 bg-[#F7D22D] rounded-md">
+                      Корзина | {{ this.cartArray.length }}
+                    </button>
+                  </RouterLink>
                   <div
-                    class="cart__content_cards px-4 h-[150px] overflow-y-scroll"
+                    class="cart__content w-[300px] h-[425px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
+                    ref="content"
+                    v-if="this.cartArray.length > 0"
                   >
                     <div
-                      class="cart__mini_card w-full my-2 p-2 border-b-2 flex justify-between"
-                      v-for="item in this.cartArray"
-                    >
-                      <div class="mini_card_header w-[25%] h-[100%]">
-                        <img
-                          class="w-[100%] h-[100%]"
-                          :src="`${item.img}`"
-                          alt=""
-                        />
-                      </div>
-                      <div class="mini_card_body w-[50%]">
-                        <h2 class="text-[14px] mb-2">{{ item.title }}</h2>
-                        <div
-                          class="h-[30px] count__form flex items-center justify-between bg-[#F3F3F7]"
-                        >
-                          <button
-                            @click="handleIncrSum(item)"
-                            class="w-full text-[20px] text-center"
-                          >
-                            +
-                          </button>
-                          <div
-                            class="count w-[20%] text-center"
-                            v-if="count > 0"
-                          >
-                            {{ count }}
-                          </div>
-                          <div class="count w-[20%] text-center" v-else>0</div>
-                          <button
-                            @click="count--"
-                            class="w-full text-[20px] text-center"
-                          >
-                            -
-                          </button>
-                        </div>
-                      </div>
-                      <div class="mini_card_footer h-full">
-                        <i
-                          @click="handleDelete(item.id)"
-                          class="cursor-pointer bx bx-x-circle text-[20px] mb-8"
-                        ></i>
-                        <p>{{ item.price }}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="cart__sum px-3 flex items-center mt-1 gap-4">
-                    <h2>Сумма заказа</h2>
-                    <span class="text-black text-[1.2rem]">{{ cartSum }}</span>
-                  </div>
-                  <div class="cart__other_title px-3">
-                    <h2 class="text-[#FF2E65]">Добавить к заказу?</h2>
-                  </div>
-                  <div class="cart__other px-3 mt-1 overflow-x-scroll">
-                    <div
-                      class="cart__other_cards w-full gap-5 flex justify-between mt-7 mb-0"
+                      class="cart__content_cards px-4 h-[150px] overflow-y-scroll"
                     >
                       <div
-                        class="other__card h-full w-[100%] flex gap-5 px-5 py-2 border-[#F7D22D] border-4 my-2 rounded-lg cursor-pointer"
-                        v-for="item in data.slice(0, 10)"
-                        @click="handleAddCart(item)"
+                        class="cart__mini_card w-full my-2 p-2 border-b-2 flex justify-between"
+                        v-for="item in this.cartArray"
                       >
-                        <div
-                          class="other__card_header bg-red-500 w-[200px] h-full"
-                        >
+                        <div class="mini_card_header w-[25%] h-[100%]">
                           <img
+                            class="w-[100%] h-[100%]"
                             :src="`${item.img}`"
-                            class="w-full h-full object-cover"
+                            alt=""
                           />
                         </div>
-                        <div class="other__card_body w-[100%]">
-                          <p class="text-[13px] w-full">{{ item.title }}...</p>
-                          <p class="text-[#FF2E65] mt-5">от {{ item.price }}</p>
+                        <div class="mini_card_body w-[50%]">
+                          <h2 class="text-[14px] mb-2">{{ item.title }}</h2>
+                          <div
+                            class="h-[30px] count__form flex items-center justify-between bg-[#F3F3F7]"
+                          >
+                            <button
+                              @click="handleIncrSum(item)"
+                              class="w-full text-[20px] text-center"
+                            >
+                              +
+                            </button>
+                            <div
+                              class="count w-[20%] text-center"
+                              v-if="count > 0"
+                            >
+                              {{ count }}
+                            </div>
+                            <div class="count w-[20%] text-center" v-else>
+                              0
+                            </div>
+                            <button
+                              @click="count--"
+                              class="w-full text-[20px] text-center"
+                            >
+                              -
+                            </button>
+                          </div>
+                        </div>
+                        <div class="mini_card_footer h-full">
+                          <i
+                            @click="handleDelete(item.id)"
+                            class="cursor-pointer bx bx-x-circle text-[20px] mb-8"
+                          ></i>
+                          <p>{{ item.price }}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart__sum px-3 flex items-center mt-1 gap-4">
+                      <h2>Сумма заказа</h2>
+                      <span class="text-black text-[1.2rem]">{{
+                        cartSum
+                      }}</span>
+                    </div>
+                    <div class="cart__other_title px-3">
+                      <h2 class="text-[#FF2E65]">Добавить к заказу?</h2>
+                    </div>
+                    <div class="cart__other px-3 mt-1 overflow-x-scroll">
+                      <div
+                        class="cart__other_cards w-full gap-5 flex justify-between mt-7 mb-0"
+                      >
+                        <div
+                          class="other__card h-full w-[100%] flex gap-5 px-5 py-2 border-[#F7D22D] border-4 my-2 rounded-lg cursor-pointer"
+                          v-for="item in data.slice(0, 10)"
+                          @click="handleAddCart(item)"
+                        >
+                          <div
+                            class="other__card_header bg-red-500 w-[200px] h-full"
+                          >
+                            <img
+                              :src="`${item.img}`"
+                              class="w-full h-full object-cover"
+                            />
+                          </div>
+                          <div class="other__card_body w-[100%]">
+                            <p class="text-[13px] w-full">
+                              {{ item.title }}...
+                            </p>
+                            <p class="text-[#FF2E65] mt-5">
+                              от {{ item.price }}
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div
-                  v-else
-                  class="cart__content w-[300px] h-[100px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-md items-center justify-center"
-                  ref="content"
-                >
-                  <h1 class="text-[32px]">Not Date</h1>
-                </div>
-              </li>
-            </ul>
-          </nav>
+                  <div
+                    v-else
+                    class="cart__content w-[300px] h-[100px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] not_data rounded-md items-center justify-center"
+                    ref="content"
+                  >
+                    <h1 class="text-[32px]">Not Date</h1>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
@@ -713,9 +728,9 @@ export default {
       this.$refs.media_nav.classList.toggle("sm:hidden");
     },
     handleIncrSum(item) {
-      this.count = this.count + 1
-      this.$emit('summary', [item, this.count])
-    }
+      this.count = this.count + 1;
+      this.$emit("summary", [item, this.count]);
+    },
   },
 };
 </script>

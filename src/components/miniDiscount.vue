@@ -27,8 +27,8 @@
       </div>
       <div class="discount__button mt-5 text-center">
         <RouterLink to="/discount">
-          <button class="text-[white] py-2 px-8 rounded-[40px] bg-[#F7D22D]">
-            Все вкции
+          <button class="text-[white] py-2 px-8 rounded-[40px] bg-[#F7D22D] hover:bg-transparent border-[#F7D22D] border-2 hover:text-[#F7D22D]">
+            Все акции
           </button>
         </RouterLink>
       </div>

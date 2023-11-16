@@ -36,7 +36,7 @@
 }
 
 .swiper-slide-prev {
-  width: 40% !important;
+  width: 50% !important;
   height: 100%;
 }
 
@@ -47,12 +47,12 @@
 }
 
 .swiper-slide-active {
-  width: 40% !important;
+  width: 50% !important;
   height: 100%;
 }
 
 .swiper-slide-active:nth-child(2) {
-  width: 40% !important;
+  width: 50% !important;
   height: 100%;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .swiper-slide-next {
-  width: 40% !important;
+  width: 50% !important;
 }
 
 .swiper-slide-next img {
