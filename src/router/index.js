@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import Categories from '../components/Categories.vue';
 import Discount from '../views/Discount.vue';
 import discountSingle from '../views/discountSingle.vue';
+import Contact from '../views/Contact.vue'
 import Cart from '../views/Cart.vue'
 
 const router = createRouter({
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/cart',
       name: 'cart',
       component: Cart
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
     }
   ]
 })

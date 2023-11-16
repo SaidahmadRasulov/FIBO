@@ -1,5 +1,5 @@
 <template>
-  <section class="footer__bottom_section py-[4rem] sm:px-[1rem] xl:px-0">
+  <section class="footer__bottom_section relative py-[4rem] sm:px-[1rem] xl:px-0">
     <div class="container flex justify-between sm:flex-col xl:flex-row">
       <div class="bottom_section_title xl:w-[40%] sm:w-[100%]">
         <div class="bottom__logo">
@@ -99,6 +99,9 @@
             <button class="text-[#696F7A] border-2 hover:border-[#F7D22D] hover:text-[white] hover:bg-[#F7D22D] py-3 px-5 bg-[#F3F3F7] rounded-[3rem] font-bold">Заказать звонок</button>
           </a>
         </div>
+      </div>
+      <div class="footer__image absolute bottom-0 right-0">
+        <img src="../image/footerImage.png" alt="">
       </div>
     </div>
   </section>

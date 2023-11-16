@@ -561,15 +561,14 @@
                     </button>
                   </RouterLink>
                   <div
-                    class="cart__content w-[300px] h-[425px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
+                    class="cart__content w-[300px] h-[360px] bg-white absolute right-0 z-[999] hidden shadow-2xl border-[3px] border-[#F7D22D] rounded-lg"
                     ref="content"
                     v-if="this.cartArray.length > 0"
                   >
                     <div
                       class="cart__content_cards px-4 h-[150px] overflow-y-scroll"
                     >
-                      <div
-                        class="cart__mini_card w-full my-2 p-2 border-b-2 flex justify-between"
+                      <div class="cart__mini_card w-full my-2 p-2 border-b-2 flex justify-between"
                         v-for="item in this.cartArray"
                       >
                         <div class="mini_card_header w-[25%] h-[100%]">
@@ -627,26 +626,26 @@
                     </div>
                     <div class="cart__other px-3 mt-1 overflow-x-scroll">
                       <div
-                        class="cart__other_cards w-full gap-5 flex justify-between mt-7 mb-0"
+                        class="cart__other_cards w-full gap-5 flex justify-between mt-7 mb-0 h-auto"
                       >
                         <div
                           class="other__card h-full w-[100%] flex gap-5 px-5 py-2 border-[#F7D22D] border-4 my-2 rounded-lg cursor-pointer"
-                          v-for="item in data.slice(0, 10)"
+                          v-for="item in otherData"
                           @click="handleAddCart(item)"
                         >
                           <div
-                            class="other__card_header bg-red-500 w-[200px] h-full"
+                            class="other__card_header w-[100px] h-full"
                           >
                             <img
                               :src="`${item.img}`"
                               class="w-full h-full object-cover"
                             />
                           </div>
-                          <div class="other__card_body w-[100%]">
+                          <div class="other__card_body w-[100%] h-[60px]">
                             <p class="text-[13px] w-full">
-                              {{ item.title }}...
+                              {{ item.title }}
                             </p>
-                            <p class="text-[#FF2E65] mt-5">
+                            <p class="text-[#FF2E65]">
                               от {{ item.price }}
                             </p>
                           </div>
@@ -695,6 +694,10 @@ export default {
       type: Array,
       required: true,
     },
+    otherData: {
+      type: Array,
+      required: true
+    }
   },
   mounted() {
     window.addEventListener("scroll", () => {

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home_swiper_section">
     <div class="swiper__content sm:h-[40vh] md:h-auto xl:h-[60vh]">
       <swiper
         :slidesPerView="4"
@@ -22,7 +22,7 @@
         </swiper-slide>
         <swiper-slide>
             <img src="../assets/second_slide.png" alt="" />
-          </swiper-slide>
+        </swiper-slide>
       </swiper>
     </div>
   </div>
