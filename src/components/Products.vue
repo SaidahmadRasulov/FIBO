@@ -24,7 +24,7 @@
                 масло, черный перец, пармезан.350 г
               </p>
             </div>
-            <div class="product__card_footer lg:gap-5 flex sm:gap-10 sm:w-[100%]  text-center items-center sm:col-span-2">
+            <div class="product__card_footer lg:gap-5 flex sm:gap-10 sm:w-[100%]  text-center items-center sm:col-span-2 xl:py-0 xl:px-0 sm:py-5 sm:px-5">
               <div class="product__price font-bold text-[22px]">
                 <p>от {{ item.price }}</p>
               </div>
@@ -62,7 +62,7 @@
                 масло, черный перец, пармезан.350 г
               </p>
             </div>
-            <div class="product__card_footer lg:gap-5 flex sm:gap-10 sm:w-[100%]  text-center items-center sm:col-span-2">
+            <div class="product__card_footer lg:gap-5 flex sm:gap-10 sm:w-[100%]  text-center items-center sm:col-span-2 xl:py-0 xl:px-0 sm:py-5 sm:px-5">
               <div class="product__price font-bold text-[22px]">
                 <p>от {{ item.price }}</p>
               </div>
@@ -100,7 +100,7 @@
                 масло, черный перец, пармезан.350 г
               </p>
             </div>
-            <div class="product__card_footer lg:gap-5 flex sm:gap-10 sm:w-[100%]  text-center items-center sm:col-span-2">
+            <div class="product__card_footer lg:gap-5 flex sm:gap-10 sm:w-[100%]  text-center items-center sm:col-span-2 xl:py-0 xl:px-0 sm:py-5 sm:px-5">
               <div class="product__price font-bold text-[22px]">
                 <p>от {{ item.price }}</p>
               </div>

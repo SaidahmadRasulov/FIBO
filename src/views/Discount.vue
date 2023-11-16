@@ -5,8 +5,7 @@
         <h1 class="text-[#F7D22D] text-[32px] font-bold">Акции</h1>
       </div>
       <div class="discount__content flex flex-wrap justify-between gap-[2rem]">
-        <div
-          class="discount_card shadow-lg rounded-lg sm:w-[100%] sm:mx-auto md:mx-0 md:w-[45%] xl:w-[30%]"
+        <div class="discount_card hover:shadow-2xl hover:cursor-pointer shadow-lg rounded-lg sm:w-[100%] sm:mx-auto md:mx-0 md:w-[45%] xl:w-[30%]"
           v-for="item in discountData"
         >
           <div class="disctount_card_header sm:w-full">
@@ -18,7 +17,7 @@
           </div>
           <div class="disctount_card_footer p-4">
             <RouterLink :to="`/discount/${item.id}`">
-              <button class="bg-[#F7D22D] py-2 px-4 rounded-xl">
+              <button class="bg-[#F7D22D] hover:text-[#F7D22D] hover:bg-transparent border-2 border-[#F7D22D] py-2 px-4 rounded-xl">
                 Посмотреть
               </button>
             </RouterLink>

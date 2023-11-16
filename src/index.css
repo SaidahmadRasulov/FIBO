@@ -64,6 +64,7 @@
   position: relative;
   z-index: 50;
   left: 0;
+  top: .5rem;
 }
 
 .custom_fixed .navbar__media img {
@@ -89,4 +90,57 @@
 
 .new__card {
   box-shadow: 0 10px 5px 0px rgb(232, 230, 230);
+}
+
+.copywrite_item {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.copywrite_item.visa::before {
+  content: '';
+  position: absolute;
+  background-image: url(./image/visa.png);
+  width: 0%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+  transform: scale(1.3);
+  top: 1rem;
+  left: -10rem;
+}
+
+.copywrite_item.paypal::before {
+  content: '';
+  position: absolute;
+  background-image: url(./image/paypal.png);
+  width: 0%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+  transform: scale(1.1);
+  top: 0rem;
+  left: -10rem;
+}
+
+.copywrite_item.master::before {
+  content: '';
+  position: absolute;
+  background-image: url(./image/master.png);
+  width: 0%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all .3s ease-in-out;
+  transform: scale(1.3);
+  top: .8rem;
+  left: -10rem;
+}
+
+.copywrite_item:hover::before {
+  width: 100%;
+  left: 0;
 }

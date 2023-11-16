@@ -6,7 +6,7 @@
         <div class="new__image h-auto xl:h-[100%] md:h-[80%] md:z-[-10] md:opacity-40 md:absolute sm:opacity-40 sm:absolute sm:z-0 sm:h-[80%] sm:top-[3rem] xl:w-[100%] xl:absolute xl:opacity-100 bottom-0">
           <img src="../assets/man.png" class="h-full" alt="" />
         </div>
-        <div class="container xl:w-[100%] sm:relative z-10 md:px-[2rem]">
+        <div class="container xl:w-[100%] sm:relative z-10 md:px-[2rem] xl:px-0">
           <div class="new__product_content w-[100%] md:h-[auto] xl:h-[50vh] pt-16">
             <div class="new__products_title text-[24px] font-bold">
               <h1>Новинки</h1>
@@ -33,6 +33,7 @@
       <Products :data="data" @add="addCart" />
     </section>
     <miniDiscount />
+    <MiniDelivery />
   </main>
 </template>
 <script>
@@ -40,6 +41,7 @@ import { RouterLink } from "vue-router";
 import Products from "../components/Products.vue";
 import miniDiscount from '../components/miniDiscount.vue';
 import Swiper from "../components/Swiper.vue";
+import MiniDelivery from "../components/miniDelivery.vue";
 
 export default {
   components: {
@@ -47,6 +49,7 @@ export default {
     Products,
     RouterLink,
     miniDiscount,
+    MiniDelivery
 },
   props: {
     data: {

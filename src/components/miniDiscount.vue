@@ -9,19 +9,19 @@
         </h1>
       </div>
       <div class="discount__content grid grid-cols-4 gap-4 h-full">
-        <div class="main_image row-span-3 col-span-2">
+        <div class="main_image row-span-3 col-span-2 hover:cursor-pointer hover:translate-y-[-.5rem]">
           <img class="h-[97%]" src="../assets/discountImage.png" alt="" />
         </div>
-        <div class="little_image row-span-1">
+        <div class="little_image row-span-1 hover:cursor-pointer hover:translate-y-[-.5rem]">
           <img class="h-full" src="../assets/discountImage.png" alt="" />
         </div>
-        <div class="little_image row-span-1">
+        <div class="little_image row-span-1 hover:cursor-pointer hover:translate-y-[-.5rem]">
           <img class="w-full h-full" src="../assets/discountImage.png" alt="" />
         </div>
-        <div class="little_image row-span-1">
+        <div class="little_image row-span-1 hover:cursor-pointer hover:translate-y-[-.5rem]">
           <img class="h-full" src="../assets/discountImage.png" alt="" />
         </div>
-        <div class="little_image row-span-1 h-full">
+        <div class="little_image row-span-1 h-full hover:cursor-pointer hover:translate-y-[-.5rem]">
           <img class="w-full h-full" src="../assets/discountImage.png" alt="" />
         </div>
       </div>

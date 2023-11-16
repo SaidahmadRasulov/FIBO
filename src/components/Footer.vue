@@ -1,98 +1,4 @@
 <template>
-  <section class="footer_top_section bg-[#E3ECF5] py-10">
-    <div class="container">
-      <div class="top_section_title text-center mb-[4rem]">
-        <h1 class="text-[32px] text-[#F7D22D] font-bold">Оплата и доставка</h1>
-      </div>
-      <div class="top_section_content">
-        <ul
-          class="top_section_cards flex sm:justify-center sm:gap-4 sm:gap-y-[56px] md:gap-[5rem] md:gap-y-[4rem] xl:gap-y-0 xl:justify-between sm:flex-wrap md:justify-center"
-        >
-          <ul
-            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
-          >
-            <li class="top_card_item relative mb-8">
-              <div
-                class="p-5 bg-white rounded-full text-[46px] text-[#FF2E65] absolute bottom-[-35px] right-[30%]"
-              >
-                <img src="../assets/shopIcon.png" alt="" />
-              </div>
-            </li>
-            <li
-              class="top_card_item px-5 pb-4 text-[13px] text-[#473E43] leading-5"
-            >
-              <strong
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
-              >
-            </li>
-          </ul>
-          <ul
-            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
-          >
-            <li class="top_card_item relative mb-8">
-              <div
-                class="p-5 bg-white rounded-full text-[46px] text-[#FF2E65] absolute bottom-[-35px] right-[30%]"
-              >
-                <img src="../assets/delivIcon.png" alt="" class="" />
-              </div>
-            </li>
-            <li
-              class="top_card_item px-5 pb-4 text-[13px] text-[#473E43] leading-5"
-            >
-              <strong
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
-              >
-            </li>
-          </ul>
-          <ul
-            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
-          >
-            <li class="top_card_item relative mb-8">
-              <div
-                class="p-5 bg-white rounded-full text-[46px] text-[#FF2E65] absolute bottom-[-35px] right-[30%]"
-              >
-                <img src="../assets/compIcon.png" alt="" class="" />
-              </div>
-            </li>
-            <li
-              class="top_card_item px-5 pb-4 text-[13px] text-[#473E43] leading-5"
-            >
-              <strong
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
-              >
-            </li>
-          </ul>
-          <ul
-            class="top_section_card sm:w-[45%] xl:w-[20%] md:w-[30%] bg-white p-3 rounded-lg shadow-xl"
-          >
-            <li class="top_card_item relative mb-8">
-              <div
-                class="p-5 bg-white rounded-full text-[46px] text-[#FF2E65] absolute bottom-[-35px] right-[30%]"
-              >
-                <img src="../assets/fastdelIcon.png" alt="" class="" />
-              </div>
-            </li>
-            <li
-              class="top_card_item px-5 pb-4 text-[13px] text-[#473E43] leading-5"
-            >
-              <strong
-                >Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong
-              >
-            </li>
-          </ul>
-        </ul>
-        <div class="top_section_map mt-10 sm:w-[90%] xl:w-full sm:mx-auto">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23963.26953062208!2d69.33861204597171!3d41.34346975978136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef48a8ed4d0e9%3A0x3772abeffc72e7b8!2sToshkent%20shahridagi%20INHA%20universiteti!5e0!3m2!1suz!2s!4v1699709260255!5m2!1suz!2s"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            class="w-full h-[400px]"
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="footer__bottom_section py-[4rem] sm:px-[1rem] xl:px-0">
     <div class="container flex justify-between sm:flex-col xl:flex-row">
       <div class="bottom_section_title xl:w-[40%] sm:w-[100%]">
@@ -135,13 +41,13 @@
         <div class="bottom_copywrite flex justify-between mt-[3rem] items-center">
           <p class="font-bold text-[14px]">YaBao Все праав защищены © 2021</p>
           <ul class="copywrite_group flex items-center gap-3">
-            <li class="copywrite_item">
+            <li class="copywrite_item visa">
               <img src="../assets/visa.png" alt="">
             </li>
-            <li class="copywrite_item">
+            <li class="copywrite_item paypal">
               <img src="../assets/paypal.png" alt="">
             </li>
-            <li class="copywrite_item">
+            <li class="copywrite_item master">
               <img src="../assets/sber.png" alt="">
             </li>
           </ul>
@@ -151,32 +57,46 @@
         <h2 class="uppercase font-bold ">Остались вопросы? А мы всегда на связи:
         </h2>
         <ul class="bottom_content_socials grid grid-cols-4 mt-[3rem] gap-3 text-center">
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
-            <img src="../assets/viber.png" class="mx-auto" alt="">
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+            <a href="https://www.viber.com" target="_blank">
+              <img src="../assets/viber.png" class="mx-auto" alt="">
+            </a>
           </li>
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+            <a href="https://www.skype.com" target="_blank">
             <img src="../assets/skype.png" class="mx-auto" alt="">
+            </a>
           </li>
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+            <a href="https://www.messenger.com" target="_blank">
             <img src="../assets/messenger.png" class="mx-auto" alt="">
+
+            </a>
           </li>
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+            <a href="https://www.telegram.com" target="_blank">
             <img src="../assets/telegram.png" class="mx-auto" alt="">
+
+            </a>
           </li>
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+            <a href="https://www.facebook.com" target="_blank">
             <img src="../assets/facebook.png" class="mx-auto" alt="">
+            </a>
           </li>
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5]">
+            <a href="https://www.vk.com" target="_blank">
             <img src="../assets/vk.png" class="mx-auto" alt="">
+            </a>
           </li>
-          <li class="rounded-xl content_social_item py-1 px-5 border-[3px] border-[#E3ECF5] col-span-2">
-            Написать нам
+          <li class="rounded-xl hover:translate-y-[-.5rem] hover:cursor-pointer content_social_item py-1 px-5 border-[3px] border-[#E3ECF5] col-span-2">
+            <RouterLink to="/contact">Написать нам</RouterLink>
           </li>
         </ul>
         <div class="bottom_contact mt-[3rem]">
           <h1 class="text-[#F7D22D] mb-[1rem] text-[32px] font-bold">+998 90-813-17-20</h1>
           <a href="tel:+998908131720">
-            <button class="text-[#696F7A] py-3 px-5 bg-[#F3F3F7] rounded-[3rem] font-bold">Заказать звонок</button>
+            <button class="text-[#696F7A] border-2 hover:border-[#F7D22D] hover:text-[white] hover:bg-[#F7D22D] py-3 px-5 bg-[#F3F3F7] rounded-[3rem] font-bold">Заказать звонок</button>
           </a>
         </div>
       </div>
@@ -184,6 +104,11 @@
   </section>
 </template>
 <script>
-export default {};
+import miniDelivery from './miniDelivery.vue'
+export default {
+  components: {
+    miniDelivery
+  }
+};
 </script>
 <style lang=""></style>

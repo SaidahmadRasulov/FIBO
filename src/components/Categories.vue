@@ -7,7 +7,7 @@
         </h1>
       </div>
       <div class="category__content flex items-center gap-7 flex-wrap">
-        <div class="category__card rounded-lg shadow-xl sm:w-[90%] sm:mx-auto md:w-[45%] xl:w-[30%] xl:mx-0"
+        <div class="category__card hover:shadow-2xl hover:cursor-pointer rounded-lg shadow-xl sm:w-[90%] sm:mx-auto md:w-[45%] xl:w-[30%] xl:mx-0"
           v-for="item in filteredData"
           :key="item.id"
         >
@@ -26,7 +26,7 @@
               <div class="product__add_cart">
                 <button
                   @click="addCart(item)"
-                  class="py-2 px-3 rounded-xl bg-[#F7D22D] text-[#473E43] hover:text-[#FFFFFF] font-[500] sm:text-[18px]"
+                  class="py-2 px-3 rounded-xl bg-[#F7D22D] hover:bg-[white] text-[#473E43] hover:text-[#F7D22D] hover:border-[#F7D22D] border-[1px] font-[500] sm:text-[18px]"
                 >
                   В корзину
                 </button>
